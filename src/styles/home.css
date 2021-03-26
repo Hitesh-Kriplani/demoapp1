@@ -1,0 +1,72 @@
+#container {
+    height: 90vh;
+    overflow: hidden;
+}
+
+#main {
+    height: 100%;
+}
+
+#todo {
+    top: 2rem;
+    height: 85%;
+    width: 85%;
+    overflow-wrap: break-word;
+    overflow-y: scroll;
+    border-style: none;
+    border-radius: 50px;
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    box-shadow: 12px 12px 45px #999999, -12px -12px 45px #ffffff;
+}
+
+#todo::-webkit-scrollbar {
+    display: none;
+}
+
+@media screen and (max-width: 992px) {
+    #todo {
+        width: 100%;
+    }
+}
+
+.text-center {
+    font-size: 4rem !important;
+    color: #ffffff;
+    text-shadow: -8px -8px 12px rgba(255, 255, 255, 1), 8px 8px 12px rgba(0, 0, 0, 0.8);
+    caret-color: #262626;
+    outline: none;
+}
+
+#inputbox {
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(145deg, #ffffff, #eee);
+    box-shadow: 12px 12px 45px #aaa, -12px -12px 45px #ffffff;
+    margin-top: 30px;
+    /* display: none; */
+}
+
+#submit {
+    width: 40px;
+    height: 40px;
+    font-size: 3rem;
+    position: absolute;
+    right: 20px;
+    top: 145px;
+    background: black;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+#submit>span {
+    position: relative;
+    right: -4px;
+    top: -23px;
+}
+
+#submit:hover {
+    transform: rotate(-90deg);
+}
